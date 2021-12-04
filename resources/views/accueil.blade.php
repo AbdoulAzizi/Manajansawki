@@ -45,11 +45,11 @@
 
            <a href="/admingeneral" class="btn btn-primary d-flex justify-content-center table mx-auto " style="font-size: 24px;font-weight:bold">الحراسة العامة</a>
     </div>
-
+<!-- 
     <div class="col-md-4 col-lg-2 menubuttons">
 
            <a href="/gestion" class="btn btn-primary d-flex justify-content-center table mx-auto " style="font-size: 24px;font-weight:bold">Etudiants </a>
-    </div>
+    </div> -->
 
 </div>
 <!--

@@ -1,50 +1,59 @@
-
 @extends('layouts.app')
-
 @section('content')
-<div class="w3-container text-center">
-    <div style="margin-top: 3%;background-color: midnightblue;color: white" class="border container" >
-        <h2>Profile de {{$etudiant->nom}} {{$etudiant->prenom}} </h2>
+ <div class="shadow p-4 mb-4 bg-white">
+     <div class="NotPrint" style="float: right">
+         <button  class="btn btn-dark" onclick="myFunction()">Imprimer la page</button>
 
-    </div>
-
-
-    <div class="w3-card-4 text-center" style="margin-top: 2%;margin-left: auto;
-        margin-right: auto;">
-        <header class="w3-container w3-light-grey">
-            <h3 >CENTRE D'EDUCATION ET DE FORMATION</h3>
-        </header>
-        <div class="w3-container" >
-           <h1><p style="font-family: 'Bodoni MT'">مركز التربية و التكوين دار الحي المسيرة - مرتيل </p></h1>
-            <hr>
-            <div style="float: left" class="border border-dark">
-                <img src="{{url('image/'.$etudiant->image)}}" alt="Avatar" style="width:250px;height: 250px;">
+     </div>
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div  class="pull-right NotPrint" style="float: left">
+                <a class="btn btn-primary" href="{{ route('budgets.index') }}"> Retour</a>
             </div>
-            <div style="float: left;margin-left: 100px;">
-                <h3>
-                <div>
-                <p><strong>Nom:</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{$etudiant->nom}} </p>
-                </div>
-                <div style="">
-                    <p><strong>Prénom:</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{$etudiant->prenom}} </p>
-                </div>
-                <div style="">
-                    <p><strong>Date de naissaance:</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{$etudiant->datenais}} </p>
-                </div>
-                <div style="">
-                    <p><strong>Matière:</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{$etudiant->matiere}} </p>
-                </div>
-                <div style="">
-                    <p><strong>Groupe:</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{$etudiant->groupe}} </p>
-                </div>
-                </h3>
-
+            <div class="pull-left table-primary text-center con" style="margin-left: 100px; margin-right: 20px">
+                <h2> Détails du budget</h2>
             </div>
-        </div>
-        <div style="margin-top: 10px">
-            <button class="w3-button w3-block" style="background-color: #764605; color: white">Dar EL Hay Massira</button>
 
         </div>
     </div>
-</div>
+
+    <div class="row container">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Numéro:</strong>
+                {{ $budget->id }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Nature du budget:</strong>
+                {{ $budget->nature_montant }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Montant:</strong>
+                {{ $budget->montant }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Date du versement:</strong>
+                {{ $budget->date}}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Heure du versement:</strong>
+                {{ $budget->heure}}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Commentaire:</strong>
+                {{ $budget->commentaire }}
+            </div>
+        </div>
+    </div>
+ </div>
 @endsection

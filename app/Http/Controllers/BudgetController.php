@@ -55,6 +55,8 @@ class BudgetController extends Controller
     public function show(Budget $budget)
     {
         //
+
+        return view('finance.budget.show',compact('budget'));
     }
 
     /**
