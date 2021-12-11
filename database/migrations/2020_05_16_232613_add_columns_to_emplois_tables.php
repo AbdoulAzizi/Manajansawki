@@ -35,13 +35,22 @@ class AddColumnsToEmploisTables extends Migration
      */
     public function down()
     {
+        // drop table
         Schema::table('emplois', function (Blueprint $table) {
             //
-            $table->dropColumn('matiere');
-            $table->dropColumn('salle');
-            $table->dropColumn('professeur');
+            $table->dropColumn('nomMat');
+            $table->dropColumn('groupe_etudiants');
+            $table->dropColumn('capacite');
+            $table->dropColumn('nomSalle');
+            $table->dropColumn('nomProf');
             $table->dropColumn('date');
+            $table->dropColumn('periode');
             $table->dropColumn('horaire');
+
+        });
+        Schema::table('emplois', function (Blueprint $table) {
+            //
+            // drop table if exists
 
 
         });

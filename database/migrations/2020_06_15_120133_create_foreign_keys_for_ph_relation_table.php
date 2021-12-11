@@ -30,8 +30,8 @@ class CreateForeignKeysForPhRelationTable extends Migration
     {
         Schema::table('horaire_periode', function (Blueprint $table){
 
-            $table->dropForeign('horaire_periode_horaire_id_foreign');
-            $table->dropForeign('horaire_periode_periode_id_foreign');
+            // $table->dropForeign('horaire_periode_horaire_id_foreign');
+            // $table->dropForeign('horaire_periode_periode_id_foreign');
 
         });
     }

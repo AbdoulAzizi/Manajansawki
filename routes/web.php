@@ -32,6 +32,10 @@ Route::get('/welcome', 'ServivceController@welcome');
 Route::get('/employes', function () {
     return view('services.employes');
 });
+Route::get('/retrait-diplomes', function () {
+    $matieres = Matiere::all();
+    return view('diplomes.retrait_diplomes', compact('matieres'));
+});
 Route::get('/gestionEmploi', function () {
     return view('admingeneral.gestionEmplois');
 });
@@ -97,6 +101,10 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
     Route::resource('/users', 'UsersController', ['except'=> ['show', 'create', 'store']]);
 });
 Route::resource('budgets', 'BudgetController');
+
+Route::post('retraits', 'RetraitdiplomeController@index');
+
+Route::resource('liste_retraits', 'RetraitdiplomeController');
 
 Route::resource('etudiants', 'EtudiantController');
 Route::resource('creneau', 'CreneauxController');

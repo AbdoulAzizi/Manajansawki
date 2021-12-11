@@ -16,7 +16,7 @@ class AddIdMatiiereToProfesseursTable extends Migration
         Schema::table('professeurs', function (Blueprint $table) {
             //
 
-            $table->string('matiere');
+            // $table->string('nomMat');
         });
     }
 
@@ -29,7 +29,7 @@ class AddIdMatiiereToProfesseursTable extends Migration
     {
         Schema::table('professeurs', function (Blueprint $table) {
             //
-            $table->dropColumn('matiere');
+            // $table->dropColumn('nomMat');
         });
     }
 }

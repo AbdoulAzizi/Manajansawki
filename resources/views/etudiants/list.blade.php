@@ -8,7 +8,7 @@
             <table class="table table-bordered table-striped text-center" id="laravel_crud" >
                 <thead style="background-color: #191970; color: #ffffff">
                 <tr>
-                    <th>Id</th>
+                    <!-- <th>Id</th> -->
                     <th>Image</th>
                     <th>Nom</th>
                     <th>Prénom</th>
@@ -21,7 +21,7 @@
                 <tbody>
                 @foreach($etudiants as $etudiant)
                     <tr >
-                        <td>{{ $etudiant->id }}</td>
+                        <!-- <td>{{ $etudiant->id }}</td> -->
                         <td>
                             <img src="{{url('image/'.$etudiant->image)}}" alt=""  class="responsive-img left" style="text-align: center; width:40px;height: 40px">
                         </td>

@@ -33,8 +33,8 @@ class AddHorairesIdToPeriodesTable extends Migration
     {
         Schema::table('periodes', function (Blueprint $table) {
             //
-            Schema::disableForeignKeyConstraints();
-            $table->dropForeign(['horaire_id']);
+            // Schema::disableForeignKeyConstraints();
+            // $table->dropForeign(['horaire_id']);
         });
     }
 }

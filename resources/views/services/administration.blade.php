@@ -22,8 +22,8 @@
                 </td>
                 <td>
                  <div class="card" style="background-color:#191970; vertical-align: middle;">
-                    <a class="card-block stretched-link text-decoration-none" href>
-                        <h2 style="color:#fff; text-align:center;" class="card-title center">التقييم والتقارير/Bilan et Rapports</h2>
+                    <a class="card-block stretched-link text-decoration-none" href="/retrait-diplomes">
+                        <h2 style="color:#fff; text-align:center;" class="card-title center">سحب الدبلومات/Retrait des diplômes</h2>
                     </a>
                 </div>
                 </td>

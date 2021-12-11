@@ -17,8 +17,8 @@ class CreateGroupesEtudiantsTable extends Migration
             $table->bigIncrements('id');
             // gourp name
             $table->String('groupe_name');
-            $table->index('matiere_id');
-            $table->foreign('matiere_id')->references('id')->on('matieres')->onDelete('cascade');
+            $table->String('nomMat');
+            // $table->foreign('matiere_id')->references('id')->on('matieres')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -35,7 +35,7 @@ class CreateGroupesEtudiantsTable extends Migration
         Schema::dropIfExists('groupes_etudiants');
         Schema::table('groupes_etudiants', function (Blueprint $table){
 
-            $table->dropForeign('groupes_etudiants_matiere_id_foreign');
+            // $table->dropForeign('groupes_etudiants_matiere_id_foreign');
 
         });
     }

@@ -33,7 +33,7 @@ class AddIdEtudiantToMatieresTable extends Migration
         Schema::table('etudiants', function (Blueprint $table) {
             //
             Schema::disableForeignKeyConstraints();
-            $table->dropForeign(['matiere_id']);
+            // $table->dropForeign(['matiere_id']);
         });
     }
 }
