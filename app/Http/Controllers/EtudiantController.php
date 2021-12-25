@@ -101,6 +101,7 @@ class EtudiantController extends Controller
         $etudiant['nom'] = $request->get('nom');
         $etudiant['prenom'] = $request->get('prenom');
         $etudiant['datenais'] = $request->get('datenais');
+        $etudiant['numero_inscription'] = $request->get('numero_inscription');
         $etudiant['nomMat'] = $request->get('nomMat');
         $etudiant['groupe_etudiants'] = $request->get('groupe_etudiants');
 
@@ -176,6 +177,7 @@ class EtudiantController extends Controller
         $etudiant['nom'] = $request->input('nom');
         $etudiant['prenom'] = $request->get('prenom');
         $etudiant['datenais'] = $request->get('datenais');
+        $etudiant['numero_inscription'] = $request->get('numero_inscription');
         $etudiant['nomMat'] = $request->get('nomMat');
         $etudiant['groupe_etudiants'] = $request->get('groupe_etudiants');
         if ($request->hasfile('image')){

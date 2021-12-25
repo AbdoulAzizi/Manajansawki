@@ -38,6 +38,16 @@
                     <span class="text-danger">{{ $errors->first('datenais') }}</span>
                 </div>
             </div>
+
+             <div class="col-md-12">
+                <div class="form-group">
+                    <strong>Numéro d'inscription</strong>
+                    <input class="form-control" col="4" name="numero_inscription" placeholder="" value="{{ $etudiant->numero_inscription }}">
+                    <span class="text-danger">{{ $errors->first('numero_inscription') }}</span>
+                </div>
+            </div>
+
+            
             <div class="col-md-12">
                 <strong>Matière</strong>
                 <select  name="nomMat" id="nomMat" class="form-control input-sm custom-select div2 input-lg dynamic"

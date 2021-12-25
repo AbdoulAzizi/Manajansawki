@@ -21,7 +21,7 @@
            <h1><p style="font-family: 'Bodoni MT'">مركز التربية و التكوين دار الحي المسيرة - مرتيل </p></h1>
             <hr>
             <div style="float: left" class="border border-dark">
-                <img src="{{url('image/'.$etudiant->image)}}" alt="Avatar" style="width:250px;height: 250px;">
+                <img src="{{url('image/'.$etudiant->image)}}" alt="Photo de profil" style="width:250px;height: 250px;">
             </div>
             <div style="float: left;margin-left: 100px;">
                 <h3>
@@ -30,6 +30,9 @@
                 </div>
                 <div style="">
                     <p><strong>Prénom:</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{$etudiant->prenom}} </p>
+                </div>
+                <div style="">
+                    <p><strong>Numéro d'inscription :</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{$etudiant->numero_inscription}} </p>
                 </div>
                 <div style="">
                     <p><strong>Date de naissaance:</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{$etudiant->datenais}} </p>

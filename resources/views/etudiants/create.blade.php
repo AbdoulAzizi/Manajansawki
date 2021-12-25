@@ -30,16 +30,16 @@
 
              <div class="col-md-6">
                 <div class="form-group">
-                    <strong>Télephone 1/ الهاتف 1</strong>
-                    <input type="text" name="numero" class="form-control" placeholder="Numéro de Télephone 1">
-                    <span class="text-danger">{{ $errors->first('numero') }}</span>
+                    <strong>Numéro d'inscription/رقم التسجيل</strong>
+                    <input type="text" name="numero_inscription" class="form-control" placeholder="رقم التسجيل">
+                    <span class="text-danger">{{ $errors->first('numero_inscription') }}</span>
                 </div>
             </div>
 
              <div class="col-md-6">
                 <div class="form-group">
-                    <strong>Télephone 2 / الهاتف 2 </strong>
-                    <input type="text" name="telephone" class="form-control" placeholder="Numéro de Télephone 2">
+                    <strong>Télephone / الهاتف  </strong>
+                    <input type="text" name="telephone" class="form-control" placeholder="Numéro de Télephone">
                     <span class="text-danger">{{ $errors->first('telephone') }}</span>
                 </div>
             </div>
